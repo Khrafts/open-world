@@ -22,9 +22,6 @@ class Graph {
 
   removePoint(point) {
     const segs = this.getSegmentsWithPoint(point);
-    // for (const seg of segs) {
-    //     this.removeSegment()
-    // }
     segs.forEach((seg) => this.removeSegment(seg));
     this.points.splice(this.points.indexOf(point), 1);
   }
